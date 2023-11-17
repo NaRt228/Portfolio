@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Montserrat:wght@400;500;700&family=Roboto+Condensed:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Condensed:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,400;1,600&display=swap');
+
+:root {
+    --clr-neon: #14f7ff;
+    --clr-bg: #001414;
+    --font-size: 3rem;
+    
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+body {
+    background: #081b29;
+    /* linear-gradient(to bottom, #081b29, #172b36, #051924); */
+    color: #eee;
+    overflow-x: hidden;
+  }
+  
+  
+
+.MainHeader {
+    position: fixed;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.Logo{
+    position: relative;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.logoMainText{
+    color: #72cbf7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#081b29;
+    animation-name: showRight;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.3s;
+    
+    
+}
+
+.navigate a{
+    margin-left: 35px;
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    font-weight: 500;
+
+}
+.navigate .active{
+    color: #00abf0;
+}
+
+.navigate a:hover,
+.navigate a:active{
+    color: #00abf0;
+}
+
+.navigate a::before{
+    width: 100%;
+}
+
+
+.home{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    height: 100vh;
+
+}
+
+.homeText{
+    max-width: 600px;
+}
+
+.homeText h1{
+
+    font-size: 70px;
+    font-weight: 700;
+    
+}
+
+.homeText h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #29b8ff;
+}
+.homeText p{
+    font-size: 22px;
+    font-weight: 300;
+}
+.homeIcons{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    
+}
+.contactIcons{
+    
+    position: absolute;
+    padding-left: 36.5%;
+    padding-top: 1%;
+    color: #1e3846;
+    
+}
+
+.contactIcons a{
+    
+    font-size: 25px;
+    color:#33aeeb;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+.contactIcons a:hover,
+.contactIcons a:active {
+    
+    color: #6ec5f0;
+    transform: scale(2);
+}
+.contactIcons a:nth-child(1) {
+    margin-right: 10px; 
+  }
+  .contactIcons a:nth-child(3){
+    margin-left: 10px;
+  }
+
+
+.home .homeText .homeIcons{
+    font-size: 35px;
+    color:#03608f;
+    margin-bottom: 25px;
+
+}
+
+.imageWrap{
+    margin-left: 340px;
+}
+.homeImage{
+    height: 400px;
+    width: 400px;
+}
+
+.feedBack{
+    width: 345px;
+    height: 50px;
+}
+.feedBack a {
+    display: inline-block;
+    padding: 15px 25px;
+    background: linear-gradient(90deg, #ff6b6b, #ffab8b, #ff6b6b);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-position 0.5s, box-shadow 0.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .feedBack a:hover {
+    background-position: 0 0;
+    box-shadow: 0 0 10px #ff6b6b, 0 0 20px #ffab8b, 0 0 30px #ff6b6b;
+  }
+
+
+/* About me page */
+.AllContent{
+    margin-top: -142px;
+    
+}
+.AboutMainContent{
+    margin-left: 700px;
+    margin-top: 360px;
+}
+.aboutMain{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMain h1{
+    font-size: 45px;
+    color: #eee;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.aboutMainTextDecoration{
+    color: #33aeeb;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.aboutMainDescribe{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+
+.aboutMainDescribe p{
+    max-width: 70%;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+
+
+.mainImageAbout{
+    width: 684px;
+    height: 684px;
+}
+
+.imageWrapAbout{
+    position: fixed;
+    margin: -624px 69px;
+}
+.SkillLevelsWrap{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SkillLevelsWrap h3{
+    
+    text-align: center;
+
+    font-size: 30px;
+}
+.SkillLevelsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    max-width: 599px;
+    gap: 14px;
+}
+
+.Skill {
+    text-align: center;
+    color: #fff;
+   
+}
+
+.Skill p {
+    margin-top: 5px; 
+}
+
+.SkillLevel {
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(to right, #001f3f, #003366);
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.SkillPercent {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    z-index: 1; /* Set z-index to 1 to place it above the ellipses */
+}
+
+.SkillLevel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--level);
+    background: linear-gradient(to right, #004080, #005cbf);
+    border-radius: 15px;
+    transition: width 0.5s ease-in-out;
+}
+
+
+    /* Contact Page */
+
+/* Styles for the contact form */
+.formContent{
+    display: flex;
+    justify-content: center;
+}
+.contact {
+
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 238px 88px;
+    width: 760px;
+  }
+
+  .headForContact {
+    position: relative;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
+
+  /* Styles for the "Me" text within the form title */
+  .headForContactMe {
+    color: #29b8ff;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  
+  /* Styles for input boxes and textareas */
+  .boxInput,
+  .textAreaInput {
+    margin: 10px 0;
+    background: transparent; /* Red background for input fields */
+    border: 2px solid #29b8ff; /* Border with the given color */
+    border-radius: 5px;
+  }
+  
+  .fieldInput {
+    position: relative;
+  }
+  
+  input[type="text"],
+  textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background: transparent; /* Transparent background for input fields */
+  }
+  
+  /* Style the input placeholders */
+  input::placeholder,
+  textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for more transparency */
+  }
+  
+.btnSubmitForm{
+    text-align: center;
+    margin-top: 40px;
+} 
+.btnSubmitForm button{
+    display: inline-block;
+    padding: 8px 64px;
+    background: linear-gradient(90deg, #29b8ff, #64a0db, #1f8ae0);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-position 0.5s, box-shadow 0.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.btnSubmitForm button:hover {
+    background-position: 0 0;
+    box-shadow: 0 0 10px #29b8ff, 0 0 20px #64a0db, 0 0 30px #1f8ae0;
+  }
+
+#msg{
+    color: #61b752;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+      /* ProjectsPage */
+
+
+/* .projects{
+    margin: 200px 100px;
+}
+.projectsMainText{
+    position: relative;
+    text-align: center;
+}
+.workList{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px
+}
+
+.work img{
+    width: 300px;
+    height: 300px;
+} */
+.projects {
+    text-align: center;
+    background-color: #081b29; /* Dark blue background */
+    color: #fff; /* White text color */
+    padding: 100px 0;
+    position: relative;
+    margin: 136px 108px;
+}
+
+.projectWrap {
+    background-color: #1a2535; /*#162a47;  Lighter blue for the container */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    height: 567px;
+}
+
+.projectsMainText {
+    font-size: 45px; /* Increase text size */
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Add neon-like glow to text */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.workList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 404px;
+}
+
+.work {
+    cursor: pointer;
+    width: calc(33.33% - 20px);
+    background-color: #1c3047; /* Dark blue rectangles */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.work:hover {
+    box-shadow: 0 0 30px #29b8ff; /* Add neon glow on hover */
+}
+
+.work-inner {
+    padding: 25px;
+}
+
+.project-title {
+    font-size: 28px; /* Increase text size */
+    margin: 0;
+    color: #29b8ff; /* Neon cyan color */
+    text-shadow: 0 0 10px #497083; /* Add neon-like glow to text */
+}
+
+.project-description {
+    font-size: 18px; /* Increase text size */
+    color: #ccc; /* Light gray text color */
+    text-shadow: 0 0 10px #214557; /* Add neon-like glow to text */
+}
+
+.workLink{
+    position: relative;
+    text-decoration: none;
+}
+
+.arduinoBoxIcon{
+    font-size: 60px;
+    color:#00abf0;
+    margin-top: 41px;
+}
+.webPageBoxIcon{
+    font-size: 60px;
+    color:#00abf0;
+    margin-top: 88px;
+}
+.cinemaBoxIcon{
+    font-size: 60px;
+    color:#00abf0;
+    margin-top: 44px;
+}
+    /* Coming soon */
+
+.bodyComingSoon {
+        background: url('images/bf45724399d8ab9aa70a633c0555a97d.gif') center/cover no-repeat fixed;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    
+
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
+
+
+
+        /* RESPONSIVING  for phones*/
+
+.navOpen{
+    display: none;
+}
+.navClose{
+    display: none;
+}
+
+@media screen and (max-width: 600px)
+{
+        /* RESPONSIVE NAVIGATE */
+    .MainHeader{
+        position: absolute;
+    }
+    .navigate {
+        display: none;
+        animation: slideIn 0.7s ease-in-out forwards;
+    }
+    
+    .navigate.show-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1d4967; /* Use a semi-transparent background */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+    }
+    .navigate.show-menu a{
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700px;
+    }
+    
+    
+    
+    /* ------------------------ */
+
+         /* RESPONSIVE MAIN PAGE */
+    .Logo{
+        font-size: 20px;
+        margin-left: -20px;
+    }
+    .contactIcons{
+        margin-left: -13px;
+        
+    }
+    .contactIcons a{
+        font-size: 20px;
+    }
+    .homeText{
+        max-width: 350px;
+        margin-left: -20px;
+    }
+    .homeText h1{
+        font-size: 40px;
+
+    }
+    .homeText p{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .homeText h3{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .imageWrap{
+        display: none;
+    }
+    .navOpen{
+        display: block;
+        font-size: 30px;
+    }
+    .navClose{
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        display: flex;
+        font-size: 30px;
+    }
+
+    /* ------------------------ */
+
+    /* RESPONSIVE ABOUT PAGE */
+    .imageWrapAbout{
+        display: none;
+    }
+    .AboutMainContent{
+        margin-left: 10px;
+        margin-top: 300px;
+    }
+    .aboutMainDescribe p{
+        max-width: 90%;
+        font-size: 17px;
+        font-weight: 300;
+        
+    }
+    /* ------------------------ */
+
+    /* RESPONSIVE PROJECTS PAGE */
+    .projects{
+        display: flex;
+        justify-content: center;
+    }
+    .projectWrap{
+        height: 1450px;
+    }
+    .workList {
+        display: block;
+        margin-top: 40px;
+        height: 404px;
+        width: 250px;
+    }
+    .work{
+        width: 250px;
+        margin-bottom: 23px;
+
+    }
+    .work-inner{
+        padding: 0px;
+    }
+    .project-description{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    /* ------------------------ */
+
+    /* RESPONSIVE CONTACT PAGE */
+    .headForContact{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        gap: 12px;
+    }
+    .contact{
+        margin: 120px 10px;
+    }
+}
+
+
+
+    /* RESPONSIVING FOR TABLETS */
+    @media screen and (min-width: 601px) and (max-width: 900px){
+    .MainHeader{
+        position: absolute;
+    }
+    .projects{
+        display: flex;
+        margin: 136px 28px;
+    }
+    .contactIcons {
+        margin-left: -55px;
+    }
+    .contactIcons a{
+        font-size: 20px;
+    }
+    .imageWrap {
+        margin-left: 67px;
+        margin-top: -160px;
+    }
+    .homeImage{
+        width: 250px;
+        height: 250px;
+    }
+    .home{
+        margin-left: 5%;
+    }
+        
+    .homeText {
+        max-width: 406px;
+    }
+    .navigate a{
+        margin-left: 15px;
+    }
+    .imageWrapAbout{
+        margin: -624px 6px;
+    }
+    .AboutMainContent{
+        margin-left: 276px;
+    }
+    .mainImageAbout {
+        width: 303px;
+        height: 309px;
+    }
+    .work{
+        width: auto;
+    }
+    .projectWrap{
+        height: 1267px;
+    }
+    .contact{
+        margin: 151px 88px;
+    }
+    
+}
+
+        /* RESPONSIVING FOR LARGE TABLETS AND SMALL SCREENS */
+        @media screen and (min-width: 901px) and (max-width: 1024px){
+            .homeImage {
+                height: 277px;
+                width: 273px;
+            }
+            .home {
+                margin-top: 230px;
+                display: flex;
+                justify-content: center;
+                height: auto;
+            }
+            .navigate a {
+                margin-left: 7px;
+            }
+            .contactIcons{
+                padding-left: 326px;
+            }
+            .homeText {
+                max-width: 468px;
+            }
+            .imageWrap {
+                margin-left: 92px;
+            }
+            .imageWrapAbout {
+                position: relative;
+                margin: -583px 6px;
+            }
+            .AboutMainContent{
+                position: relative;
+                margin-left: 276px;
+            }
+            .mainImageAbout {
+                width: 303px;
+                height: 309px;
+            }
+            .AllContent {
+                margin-top: -198px;
+            }
+            .mainImageAbout {
+                width: 326px;
+                height: 341px;
+            }
+            .work-inner {
+                padding: 6px;
+            }
+            .projects{
+                margin: 136px 38px;
+            }
+            .work{
+                padding: 0;
+            }
+            .project-title {
+                font-size: 25px;
+                margin: 10px;
+            }
+            .project-description {
+                font-size: 16px;
+            }
+
+        }
+        @media screen and (min-width: 1025px) and (max-width: 1450px){
+            .homeText h1 {
+                font-size: 60px;
+                width: 362px;
+            }
+
+            .homeImage {
+                height: 353px;
+                width: 338px;
+            }
+            .imageWrap {
+                margin-left: 316px;
+            }
+            .homeText h3 {
+                font-size: 35px;
+                width: 403px;
+            }
+            .AboutMainContent {
+                margin-left: 377px;
+                margin-top: 360px;
+            }
+            .mainImageAbout {
+                width: 421px;
+                height: 456px;
+            }
+            .imageWrapAbout {
+                position: relative;
+                margin: -634px 33px;
+            }
+            .work{
+                padding: 3px;
+            }
+            .work-inner{
+                padding: 0;
+            }
+            .project-title{
+                padding: 11px;
+            }
+
+
+        }
+@keyframes slideIn {
+    from {
+        left: 100%; /* Start off-screen to the left */
+    }
+    to {
+        left: 0; /* End at the left edge */
+    }
+}

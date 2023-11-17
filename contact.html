@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel = "stylesheet" href="mainCss.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src = "menuConfiguration.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact</title>
+</head>
+<body class="formContent">
+    
+    <header class = "MainHeader">
+        
+        <a href="#" class = "Logo">&lt;/<span class = "logoMainText">Yuriy</span>&gt;</a>
+
+        
+        <div class="contactIcons">
+            <a href="https://www.instagram.com/pererodil.tretiy_reich" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.youtube.com/channel/UCI6G_Nkr1E2f02800Wf6MhA" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            <a href="https://discordapp.com/users/566945994609262642" target="_blank"><i class='bx bxl-discord-alt'></i></i></a>
+    
+        </div>
+        
+        <nav class = "navigate">
+            
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+            <iconify-icon icon="material-symbols:close" class="navClose" onclick="hideMenu()"></iconify-icon>
+        </nav>
+        <iconify-icon icon="humbleicons:bars" class="navOpen" onclick="showMenu()"></iconify-icon>
+    </header>
+
+
+
+    <section class = "contact">
+        <h2 class="headForContact">Contact <span class = "headForContactMe">Me</span></h2>
+        <div class = "formWrap">
+            <form name = 'submit-to-google-sheet'>
+                <div class = "boxInput">
+                    <div class = "fieldInput">
+                        <input name="Full name" type="text"  placeholder="Full name" required>
+                    </div>
+                </div>
+                <div class = "boxInput">
+                    <div class = "fieldInput">
+                        <input name="Email" type="text"  placeholder="Your email">
+                    
+                    </div>
+                </div>
+                <div class = "boxInput">
+                    <div class = "fieldInput">
+                        <input name="Phone number" type="text"  placeholder="Phone number">
+                        
+                    </div>
+                </div>
+                <div class = "textAreaInput">
+                    <textarea  name = "Message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                </div>
+
+                <div class = "btnSubmitForm">
+                    <button type= 'submit' >Send</button>
+                </div>
+                <span id = "msg"></span>
+                <script src="contactForm.js"></script>
+            </form>
+            
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="mainCss.css">
+    <script src = "menuConfiguration.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>My projects</title>
+</head>
+<body>
+    
+    <header class = "MainHeader">
+        
+        <a href="#" class = "Logo">&lt;/<span class = "logoMainText">Yuriy</span>&gt;</a>
+
+        
+        <div class="contactIcons">
+            <a href="https://www.instagram.com/pererodil.tretiy_reich" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.youtube.com/channel/UCI6G_Nkr1E2f02800Wf6MhA" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            <a href="https://discordapp.com/users/566945994609262642" target="_blank"><i class='bx bxl-discord-alt'></i></i></a>
+    
+        </div>
+        
+        <nav class = "navigate">
+            
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+            <iconify-icon icon="material-symbols:close" class="navClose" onclick="hideMenu()"></iconify-icon>
+        </nav>
+        <iconify-icon icon="humbleicons:bars" class="navOpen" onclick="showMenu()"></iconify-icon>
+    </header>
+    <div class="projects">
+        <div class="projectWrap">
+            <h1 class="projectsMainText">My works</h1>
+            <div class="workList">
+                    <div class="work" onclick="window.location='comingSoon.html'">
+                        <div class="work-inner">
+                            <h2 class="project-title">Arduino drone</h2>
+                            <p class="project-description">Have you ever thought, that using 
+                                a microcontroller such as arduino and some other material,
+                            you can make drone that flight and can work for a long distances?
+                        I was thinking the same, until me with my schoolmates created our school 
+                        project with this thema </p>
+                        <iconify-icon icon="simple-icons:arduino" class = "arduinoBoxIcon"></iconify-icon>
+                        </div>
+                        
+                    </div> 
+                <div class="work" onclick="window.location='comingSoon.html'">
+                    <div class="work-inner">
+                        <h2 class="project-title">Portfolio</h2>
+                        <p class="project-description">As it sounds weird, 
+                            but this page is my first web projects. This is a my school 
+                            project to Web Programming lessons. And i decide to make my 
+                            school project in portfolio style, to use it in future.</p>
+                            <iconify-icon icon="icon-park-outline:web-page" class="webPageBoxIcon"></iconify-icon>
+                    </div>
+                </div>
+                <div class="work" onclick="window.location='comingSoon.html'">
+                    <div class="work-inner">
+                        <h2 class="project-title">Cinema discord bot</h2>
+                        <p class="project-description">Also my school project in programming. 
+                            This is a bot, that was written in C#, that parse data from cinestar.cz. 
+                            This bot can show you all today and tomorow film programs in CineStar cinemas from all cities 
+                            in Czech Republic and after send them to your discord server.</p>
+                            <iconify-icon icon="mdi:cinema" class = "cinemaBoxIcon"></iconify-icon>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
