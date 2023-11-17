@@ -541,7 +541,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 700px)
 {
         /* RESPONSIVE NAVIGATE */
     .MainHeader{
@@ -679,7 +679,7 @@ body {
 
 
     /* RESPONSIVING FOR TABLETS */
-    @media screen and (min-width: 601px) and (max-width: 900px){
+    @media screen and (min-width: 701px) and (max-width: 900px){
     .MainHeader{
         position: absolute;
     }
