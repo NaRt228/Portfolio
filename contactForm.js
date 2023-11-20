@@ -1,7 +1,7 @@
 //   https://script.google.com/macros/s/AKfycbyeHZVm5H6rq33IcbxZGa19DslbnhCNQiXqDd0D22gF7zlwtPfQz-jbLNfNDuMO46sG/exec
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxXk1sdnJxs0ezbiJiT0V60O62mHzu5oXBbcjKk6FCAAHWx4ggG5xzkINlykPqy_mGr/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwgckHKw91Otno5-4myG2kIy8-AhxbXxgOi_FVX5tdGWHhEGpi8Tj2a3N0Kvu95q91CRw/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 
