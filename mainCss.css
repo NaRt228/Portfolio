@@ -25,7 +25,7 @@ body {
   
 
 .MainHeader {
-    position: fixed;
+    position: absolute;
     top: 7px;
     left: 0;
     width: 100%;
@@ -246,7 +246,7 @@ body {
 }
 
 .imageWrapAbout{
-    position: fixed;
+    position: relative;
     margin: -624px 69px;
 }
 .SkillLevelsWrap{
